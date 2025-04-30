@@ -1,0 +1,47 @@
+{
+	"include": ["**/*.ts", "**/*.tsx"],
+	"compilerOptions": {
+		// Environment setup & latest features
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleDetection": "force",
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+		"allowJs": true,
+		"esModuleInterop": false,
+
+		// Bundler mode
+		"isolatedModules": true,
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"noEmit": true,
+
+		// Best practices
+		"strict": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+
+		// Some stricter flags (disabled by default)
+		"allowSyntheticDefaultImports": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noPropertyAccessFromIndexSignature": false,
+
+		"types": ["vite/client", "@pandacss/types"],
+		"skipLibCheck": true,
+
+		// Path aliases
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["./src/components/*"],
+			"@hooks/*": ["src/utils/hooks/*"],
+			"@lib/*": ["./src/lib/*"],
+			"@routes/*": ["./src/routes/*"],
+			"@styled-system/*": ["./styled-system/*"],
+			"@theme/*": ["./src/theme/*"],
+			"@utils/*": ["./src/utils/*"]
+		}
+	}
+}

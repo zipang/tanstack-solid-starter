@@ -1,0 +1,52 @@
+{
+	"name": "redraft-mono",
+	"version": "1.0.0",
+	"description": "Monorepo for Redraft web app and File Manager Services",
+	"private": true,
+	"workspaces": ["packages/*"],
+	"type": "module",
+	"scripts": {
+		"codegen": "bunx --bun panda codegen --clean",
+		"dev": "bunx --bun vite --port 3000",
+		"start": "bunx --bun vite --port 3000",
+		"build": "bunx --bun vite build && tsc",
+		"serve": "bunx --bun vite preview",
+		"test": "bun test",
+		"format": "biome format --write .",
+		"lint": "biome lint --write .",
+		"check": "biome check",
+		"storybook": "rm -Rf node_modules/storybook-solidjs-vite/node_modules && storybook dev -p 6006",
+		"build-storybook": "bunx --bun storybook build"
+	},
+	"dependencies": {
+		"@tanstack/router-plugin": "^1.119.0",
+		"@tanstack/solid-query": "^5.74.10",
+		"@tanstack/solid-router": "^1.119.0",
+		"@tanstack/solid-router-devtools": "^1.119.0",
+		"@tanstack/solid-store": "^0.7.0",
+		"better-auth": "^1.2.7",
+		"cm-markdown-editor": "workspace:*",
+		"file-manager-services": "workspace:*",
+		"solid-js": "^1.9.5",
+		"solidjs-use": "^2.3.0",
+		"valibot": "^1.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@pandacss/dev": "^0.53.6",
+		"@storybook/addon-essentials": "^8.6.12",
+		"@storybook/addon-interactions": "^8.6.12",
+		"@storybook/blocks": "^8.6.12",
+		"@storybook/builder-vite": "^8.6.12",
+		"@storybook/preview-api": "^8.6.12",
+		"@types/bun": "^1.2.11",
+		"globals": "^15.15.0",
+		"sass": "^1.87.0",
+		"storybook": "^8.6.12",
+		"storybook-solidjs": "1.0.0-beta.6",
+		"storybook-solidjs-vite": "1.0.0-beta.6",
+		"vite": "^6.3.4",
+		"vite-plugin-solid": "^2.11.6",
+		"vite-tsconfig-paths": "^5.1.4"
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "framework": "solid",
+  "typescript": true,
+  "tailwind": true,
+  "projectName": "tan-tan",
+  "mode": "file-router",
+  "packageManager": "bun",
+  "toolchain": "biome",
+  "variableValues": {},
+  "git": true,
+  "version": 1,
+  "existingAddOns": []
+}
