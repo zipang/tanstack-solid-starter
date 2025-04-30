@@ -1,27 +1,22 @@
-Welcome to your new TanStack app! 
+# TanStack Router + SolidJS starter with PandaCSS !
 
-# Getting Started
+## Getting Started
 
-To run this application:
+This application uses `bun` as the package manager/tester/runtime to achieve exceptional performances:
 
+Install the dependancies
 ```bash
-bun install
-bun run start
+bun i
 ```
 
-# Building For Production
-
-To build this application for production:
-
+Launch the application in dev mode:
 ```bash
-bun run build
+bun dev
 ```
 
 ## Styling
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-
+This project uses [Panda CSS](https://pandacss.com/) for styling.
 
 ## Routing
 This project uses [TanStack Router](https://tanstack.com/router). The initial setup is a file based router. Which means that the routes are managed as fiels in `src/routes`.
@@ -117,11 +112,6 @@ const peopleRoute = createRoute({
 
 Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/solid/guide/data-loading#loader-parameters).
 
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-
 ## Linting & Formatting
 
 This project uses [Biome](https://biomejs.dev/) for linting and formatting. The following scripts are available:
@@ -133,7 +123,11 @@ bun run format
 bun run check
 ```
 
+## Building For Production
 
-# Learn More
+To build this application for production:
 
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
+```bash
+bun run build
+```
+
